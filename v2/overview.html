@@ -1,6 +1,6 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Overview · Spain Road Trip</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/style.css"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script></head><body><nav class="nav"><div class="nav-inner"><a class="brand" href="index.html">🌒 Spain Road Trip 2026</a><div class="links"><a href="overview.html">Overview</a><a href="eclipse.html">Eclipse</a><a href="culture.html">Culture</a><a href="drives/index.html">Getting around</a></div></div></nav><header class="hero" style="background-image:url('assets/images/cantabria.jpg')"><div class="hero-text"><h1>Overview</h1><div class="summary">The whole trip at a glance — fly in, three bases, the eclipse, and where everything links.</div></div></header><main class="wrap">
-<p>Eleven days, three bases, almost no driving. We <strong>fly Barcelona → Bilbao</strong>, hire a car, and stay put in three places — the Basque coast, the green western Pyrenees, and the Cantabrian coast for the eclipse — then fly home from Bilbao. Flying instead of driving the long loop from Barcelona frees up about two whole days for the holiday.</p>
-<p><strong>Route:</strong> Fly BCN → Bilbao → San Sebastián → Ochagavía / Irati → Cantabria coast → Bilbao → fly BCN</p>
+<p>Eleven days, three bases, almost no driving. We <strong>fly Barcelona → Bilbao</strong>, hire a car, and stay put in three places — the Basque coast, the <strong>Picos de Europa</strong> mountains, and the Cantabrian coast for the eclipse — then fly home from Bilbao. Flying instead of driving the long loop from Barcelona frees up about two whole days for the holiday.</p>
+<p><strong>Route:</strong> Fly BCN → Bilbao → San Sebastián → Picos de Europa → Cantabria coast → Bilbao → fly BCN</p>
 <h2 id="itinerary">Itinerary</h2>
 <table>
 <colgroup>
@@ -36,17 +36,17 @@
 </tr>
 <tr>
 <td>8 – 11 Aug</td>
-<td><a href="stops/ochagavia-irati.html">Ochagavía / Irati</a></td>
+<td><a href="stops/ochagavia-irati.html">Picos de Europa</a> (Potes)</td>
 <td style="text-align: center;">3</td>
-<td>~2h</td>
-<td>Beech forest, river, mountain calm</td>
+<td>~3h15</td>
+<td>Cable car, river swim, medieval Potes</td>
 </tr>
 <tr>
 <td>11 – 14 Aug</td>
 <td><a href="stops/cantabria.html">Cantabria coast</a></td>
 <td style="text-align: center;">3</td>
-<td>~3.5h</td>
-<td>Beaches, Picos, Sokolov, <strong>the eclipse</strong></td>
+<td>~1h</td>
+<td>Beaches, Sokolov, <strong>the eclipse</strong></td>
 </tr>
 <tr>
 <td>14 – 15 Aug</td>
@@ -64,7 +64,7 @@
 </tr>
 </tbody>
 </table>
-<p><strong>10 nights total.</strong> One ~3.5h drive (Pyrenees → coast); everything else under two hours. The last night in Bilbao makes getaway day a 12-minute airport hop.</p>
+<p><strong>10 nights total.</strong> Basing in the Picos keeps the eclipse-eve drive to the coast to just ~1h, and the last night in Bilbao makes getaway day a 12-minute airport hop.</p>
 <h2 id="feature-pages">Feature pages</h2>
 <ul>
 <li>🌒 <a href="eclipse.html"><strong>The Eclipse</strong></a> — 12 August, the reason for the timing. Viewing plan, glasses, viewpoint.</li>
@@ -86,8 +86,8 @@
 <div id="map"></div></main><footer class="site">Spain Road Trip · 5 – 15 August 2026 · Simon, Jo &amp; Freya</footer><script>
 var bcn=[41.3851,2.1734], bio=[43.263,-2.935];
 var drive=[["✈ Fly in/out + last night · Bilbao",43.263,-2.935],["1 · San Sebastián",43.3183,-1.9812],
-["2 · Ochagavía / Irati",42.9079,-1.0830],["3 · Cantabria coast · Comillas 🌒",43.3876,-4.2906]];
-var dloop=[[43.263,-2.935],[43.3183,-1.9812],[42.9079,-1.0830],[43.3876,-4.2906],[43.263,-2.935]];
+["2 · Picos de Europa · Potes",43.155,-4.628],["3 · Cantabria coast · Comillas 🌒",43.3876,-4.2906]];
+var dloop=[[43.263,-2.935],[43.3183,-1.9812],[43.155,-4.628],[43.3876,-4.2906],[43.263,-2.935]];
 var map=L.map('map');
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© OpenStreetMap',maxZoom:18}).addTo(map);
 L.polyline([bcn,bio],{color:'#1B6E8C',weight:3,opacity:.85,dashArray:'8,9'}).addTo(map);

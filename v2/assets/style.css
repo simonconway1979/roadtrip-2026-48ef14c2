@@ -134,6 +134,22 @@ footer.site { text-align: center; padding: 30px 22px; color: var(--ink-soft); fo
 /* map */
 #map { height: 460px; border-radius: var(--radius); box-shadow: var(--shadow); margin: 1.5em 0; z-index: 1; }
 
+/* ---------- "choose your apartment" decision block ---------- */
+.choose { background: var(--sand-2); border: 1px solid var(--line); border-radius: var(--radius); padding: 22px 24px; margin: 1.6em 0; box-shadow: var(--shadow); }
+.choose .choose-head { font-family: "Playfair Display", serif; font-weight: 700; font-size: 1.5rem; color: var(--terra-dk); margin: 0 0 .2em; }
+.choose .choose-sub { color: var(--ink-soft); margin: 0 0 1.1em; font-size: 1rem; }
+.choose-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.choice { background: var(--white); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; display: flex; flex-direction: column; }
+.choice h4 { font-size: 1.18rem; margin: 0 0 .15em; color: var(--sea-dk); }
+.choice .tagline { color: var(--ink-soft); font-size: .92rem; margin: 0 0 .8em; }
+.choice ul { list-style: none; padding: 0; margin: 0 0 1em; font-size: .95rem; }
+.choice ul li { padding: 2px 0 2px 1.5em; text-indent: -1.5em; }
+.choice .pros li::before { content: "✓ "; color: #2E8B57; font-weight: 700; }
+.choice .cons li::before { content: "✗ "; color: var(--terra); font-weight: 700; }
+.choice .choice-link { margin-top: auto; font-weight: 700; font-size: .92rem; }
+.choose-foot { margin: 1.1em 0 0; font-size: .95rem; color: var(--ink-soft); }
+@media (max-width: 600px) { .choose-cards { grid-template-columns: 1fr; } }
+
 /* responsive */
 @media (max-width: 600px) {
   body { font-size: 17px; }
